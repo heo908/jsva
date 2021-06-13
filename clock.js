@@ -17,4 +17,3 @@ function init() {
 }
 
 init();
-
