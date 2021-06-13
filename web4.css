@@ -102,7 +102,7 @@ input{
     background-color: #2f3542;
     box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
     transform-origin:  100% 0%;
-    animation: loader2 0.9s linear infinite;
+    animation: loader2 0.97s linear infinite;
 }
 
 .clockWeather .js-weather{
