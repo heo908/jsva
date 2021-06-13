@@ -1,0 +1,276 @@
+@import "reset.css";
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    animation-name: backgroundColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+input{
+    padding: 0;
+    border: 0;
+}
+
+.home{}
+.wrapper{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 100%;
+     padding: 20px;
+}
+
+.clockWeather{
+    width: 240px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 2px solid silver;
+}
+
+.clockWeather .design{
+    background-color: black;
+}
+
+.clockWeather h1{
+   margin: 0;
+   padding: 0;
+}
+.clockWeather .clock{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.clockWeather .clock h1{
+    width: 168px;
+}
+.content-design {
+    position: relative;
+    left: 20px;
+
+    
+}
+.clockWeather .clock .design
+{
+    width: 38px;
+    height: 38px;
+    background-color: blue;
+    opacity: none;
+    padding: 3px;
+
+}
+
+.clockWeather .clock .design-in {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: yellowgreen;
+}
+
+.clockWeather .clock .design .second{
+    width: 3px;
+    height: 12px;
+    background-color: #60d394;
+}
+
+.clockWeather .clock .design-in div{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    top: 19px;
+    left: 3px;
+    background-color: #2f3542;
+    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+    transform-origin:  100% 0%;
+    animation: loader2 0.9s linear infinite;
+}
+
+.clockWeather .js-weather{
+   color: black;
+}
+
+input:first-child{
+    height: 45px;
+    background-color:gainsboro;
+    line-height: 12px;
+    font-size: 23px;
+    padding-left: 20px;
+    border-radius: 25px;
+}
+
+
+
+input:focus{
+    outline: none;
+}
+
+.js-form-greeting {
+    margin-top: 29px;
+}
+
+.js-list {
+    margin-top: 10px;
+    width: 354px;
+    height: 456px;
+    font-size: 23px;
+    background-color: white;
+    opacity: 0.6;
+    box-shadow: 4px 12px 30px 6px rgb(0 0 0 / 9%);
+    border-radius: 10px;
+    padding: 13px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    top: 25px;
+    left: 2px;
+}
+
+.js-list::-webkit-scrollbar {
+    width: 10px;
+    /* animation: none 1s ease-in-out; */
+    /* display: none; */
+}
+
+
+.js-list::-webkit-scrollbar-thumb {
+    /* display: none; */
+    background-color: #2f3542;
+    border-radius: 15px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.js-list::-webkit-scrollbar-track {
+    /* display: none; */
+    background-color: white;
+}
+
+
+.js-list ul li{
+    padding: 12px 30px;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    animation-duration: 3s;
+    animation-name: durnan;
+    animation: ident  1s ease-in-out;
+    overflow-x: hidden;
+}
+
+.js-toDoList li button{
+    /* display: none; */
+   border: none;
+   font-size: 22px;
+   color: rgba(0, 0, 0, 0.2);
+   background-color: rgba(0, 0, 0, 0);
+}
+
+
+.js-toDoList li button:hover{
+    color: black;
+}
+
+.greetings{
+    color: black;
+}
+
+h4{
+    font-size: 64px;
+}
+
+.form,
+.greetings{
+  display: none;
+}
+
+.showing{
+    display: block;
+}
+
+
+
+
+ 
+ .bgImge {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: -1;
+   height: 100%;
+   animation: fadeIn .5s linear ;
+ }
+
+ @keyframes loader2{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+ @keyframes ident {
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+
+@keyframes scrollBarIn {
+    from{
+        display: none;
+    }
+    to{
+        display: block;
+    }
+}
+
+@keyframes backgroundColor {
+    0% {
+        color: #ee6055;
+    }
+    25% {
+        color: #60d394;
+ 
+    }
+    50%{
+        color: #aaf683;
+
+    }
+    75%{
+        color: #ffd97d;
+    }
+
+    100%{
+        color: #ff9b85;
+    }
+    
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    } to {
+        opacity: 1;
+    }
+ 
+ 
+ }
